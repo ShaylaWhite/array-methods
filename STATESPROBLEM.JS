@@ -325,3 +325,33 @@ const allCapitalsA = states.filter(state => state.capital.startsWith('A'));
 
 // Finally, we print the 'allCapitalsA' array to the console.
 console.log(allCapitalsA);
+
+
+
+
+
+// Create an array called allStatesTwoWords with all the states with two words in their name.
+
+// We're using the filter() method on the 'states' array to create a new array called 'allStatesTwoWords'.
+// The filter() method iterates through each element (state object) in the 'states' array.
+
+const allStatesTwoWords = states.filter(state => state.name.split(' ').length === 2);
+
+// The filter() method takes a callback function as its argument. Here, we're using an arrow function.
+// The arrow function is invoked for each element in the 'states' array.
+
+// Inside the callback function:
+// - 'state' represents each individual state object being evaluated in the filter() method.
+// - 'state.name' refers to the value of the 'name' property within the current 'state' object.
+// - '.split(' ')' splits the 'name' value into an array of words using the space (' ') as a delimiter.
+// - '.length' returns the number of words in the array.
+
+// The condition 'state.name.split(' ').length === 2' checks if the state name has exactly two words.
+
+// If the condition is true for a state object, it will be included in the new array.
+// If false, it will be excluded.
+
+// The resulting 'allStatesTwoWords' array will contain only the state objects with names consisting of two words.
+
+// Finally, we print the 'allStatesTwoWords' array to the console.
+console.log(allStatesTwoWords);
