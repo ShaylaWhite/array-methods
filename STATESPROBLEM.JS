@@ -300,3 +300,28 @@ const states = [
       long: "-104.802042"
     }
   ]
+
+
+  // declare var states
+// Create an array called allCapitalsA with all the states with capitals that start with the letter A.
+
+// We're using the filter() method on the 'states' array to create a new array called 'allCapitalsA'.
+// The filter() method iterates through each element (state object) in the 'states' array.
+
+const allCapitalsA = states.filter(state => state.capital.startsWith('A'));
+
+// The filter() method takes a callback function as its argument. Here, we're using an arrow function.
+// The arrow function is invoked for each element in the 'states' array.
+
+// Inside the callback function:
+// - 'state' represents each individual state object being evaluated in the filter() method.
+// - 'state.capital' refers to the value of the 'capital' property within the current 'state' object.
+// - '.startsWith('A')' checks if the value of the 'capital' property starts with the letter 'A'.
+
+// If the condition 'state.capital.startsWith('A')' is true for a state object, it will be included in the new array.
+// If false, it will be excluded.
+
+// The resulting 'allCapitalsA' array will contain only the state objects with capitals starting with 'A'.
+
+// Finally, we print the 'allCapitalsA' array to the console.
+console.log(allCapitalsA);
